@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0151E75829F1230400AB619A /* DashBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0151E75729F1230400AB619A /* DashBoardViewController.swift */; };
+		018F877B29FF96B000701F26 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018F877A29FF96B000701F26 /* SearchTableViewCell.swift */; };
+		018F877D29FF971A00701F26 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018F877C29FF971A00701F26 /* SearchViewController.swift */; };
+		018F877F29FFA3CC00701F26 /* CLLoactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018F877E29FFA3CC00701F26 /* CLLoactionViewController.swift */; };
+		018F878129FFA4CF00701F26 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018F878029FFA4CF00701F26 /* LocationManager.swift */; };
 		01C0096129EE6C350058C6E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C0096029EE6C350058C6E1 /* AppDelegate.swift */; };
 		01C0096329EE6C350058C6E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C0096229EE6C350058C6E1 /* SceneDelegate.swift */; };
 		01C0096529EE6C350058C6E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C0096429EE6C350058C6E1 /* ViewController.swift */; };
@@ -21,6 +25,10 @@
 
 /* Begin PBXFileReference section */
 		0151E75729F1230400AB619A /* DashBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashBoardViewController.swift; sourceTree = "<group>"; };
+		018F877A29FF96B000701F26 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		018F877C29FF971A00701F26 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		018F877E29FFA3CC00701F26 /* CLLoactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLLoactionViewController.swift; sourceTree = "<group>"; };
+		018F878029FFA4CF00701F26 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		01C0095D29EE6C350058C6E1 /* TaskOfSignIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskOfSignIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01C0096029EE6C350058C6E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01C0096229EE6C350058C6E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,7 +77,11 @@
 				01C0096429EE6C350058C6E1 /* ViewController.swift */,
 				01E555ED29F7E07700C91B1C /* ImagePickerActionSheetViewController.swift */,
 				01C0097429EE7C6A0058C6E1 /* SignUpViewController.swift */,
+				018F878029FFA4CF00701F26 /* LocationManager.swift */,
+				018F877E29FFA3CC00701F26 /* CLLoactionViewController.swift */,
+				018F877C29FF971A00701F26 /* SearchViewController.swift */,
 				0151E75729F1230400AB619A /* DashBoardViewController.swift */,
+				018F877A29FF96B000701F26 /* SearchTableViewCell.swift */,
 				01C0097629EE7C880058C6E1 /* ForgetViewController.swift */,
 				01C0096B29EE6C370058C6E1 /* LaunchScreen.storyboard */,
 				01C0096929EE6C370058C6E1 /* Assets.xcassets */,
@@ -153,8 +165,12 @@
 				01E555EE29F7E07700C91B1C /* ImagePickerActionSheetViewController.swift in Sources */,
 				01C0096529EE6C350058C6E1 /* ViewController.swift in Sources */,
 				01C0096129EE6C350058C6E1 /* AppDelegate.swift in Sources */,
+				018F878129FFA4CF00701F26 /* LocationManager.swift in Sources */,
+				018F877D29FF971A00701F26 /* SearchViewController.swift in Sources */,
+				018F877F29FFA3CC00701F26 /* CLLoactionViewController.swift in Sources */,
 				01C0097729EE7C880058C6E1 /* ForgetViewController.swift in Sources */,
 				0151E75829F1230400AB619A /* DashBoardViewController.swift in Sources */,
+				018F877B29FF96B000701F26 /* SearchTableViewCell.swift in Sources */,
 				01C0097529EE7C6A0058C6E1 /* SignUpViewController.swift in Sources */,
 				01C0096329EE6C350058C6E1 /* SceneDelegate.swift in Sources */,
 			);
@@ -305,6 +321,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TaskOfSignIn/Info.plist;
+				INFOPLIST_KEY_NSLocationUsageDescription = "TaskOfSignIn need your location to showm on app";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "TaskOfSignIn need your location to showm on app";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -332,6 +350,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TaskOfSignIn/Info.plist;
+				INFOPLIST_KEY_NSLocationUsageDescription = "TaskOfSignIn need your location to showm on app";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "TaskOfSignIn need your location to showm on app";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
