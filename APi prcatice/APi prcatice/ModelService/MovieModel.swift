@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MovieModel: Decodable {
+class MovieModel: Decodable {	
     
    
     var artistName: String?

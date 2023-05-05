@@ -30,11 +30,11 @@ class LocationManager: NSObject {
     var currentLocation: LocationAddress?
     
     private var locationManger: CLLocationManager = {
-        let locationMan = CLLocationManager()
-        locationMan.desiredAccuracy = kCLLocationAccuracyBest
-        locationMan.distanceFilter = 10
+        let locationManager = CLLocationManager()
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.distanceFilter = 10
         
-        return locationMan
+        return locationManager
     }()
     
     func stratLocationUpdates(completed: handler?) {
@@ -42,6 +42,7 @@ class LocationManager: NSObject {
         
         locationManger.delegate = self
         locationManger.requestAlwaysAuthorization()
+        locationManger.startUpdatingLocation()
     }
 }
 

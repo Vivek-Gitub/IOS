@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		01E812BA29E82D3600CC6F59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01E812B829E82D3600CC6F59 /* Main.storyboard */; };
 		01E812BC29E82D3800CC6F59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01E812BB29E82D3800CC6F59 /* Assets.xcassets */; };
 		01E812BF29E82D3800CC6F59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01E812BD29E82D3800CC6F59 /* LaunchScreen.storyboard */; };
+		4C22C9F2915852FF5ECF4E2C /* Pods_ConstraintsPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1946CB06102F500B3FC006 /* Pods_ConstraintsPractice.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		01E812BB29E82D3800CC6F59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01E812BE29E82D3800CC6F59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01E812C029E82D3800CC6F59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10238C41B6E388044D1F4157 /* Pods-ConstraintsPractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConstraintsPractice.release.xcconfig"; path = "Target Support Files/Pods-ConstraintsPractice/Pods-ConstraintsPractice.release.xcconfig"; sourceTree = "<group>"; };
+		BB1946CB06102F500B3FC006 /* Pods_ConstraintsPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ConstraintsPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9CC970E35BF1CA30E7662D1 /* Pods-ConstraintsPractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConstraintsPractice.debug.xcconfig"; path = "Target Support Files/Pods-ConstraintsPractice/Pods-ConstraintsPractice.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C22C9F2915852FF5ECF4E2C /* Pods_ConstraintsPractice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				01E812B129E82D3600CC6F59 /* ConstraintsPractice */,
 				01E812B029E82D3600CC6F59 /* Products */,
+				313E9B62DB9438D83E8054CD /* Pods */,
+				2194B77CC03BF03FCF020FE2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = ConstraintsPractice;
 			sourceTree = "<group>";
 		};
+		2194B77CC03BF03FCF020FE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB1946CB06102F500B3FC006 /* Pods_ConstraintsPractice.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		313E9B62DB9438D83E8054CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9CC970E35BF1CA30E7662D1 /* Pods-ConstraintsPractice.debug.xcconfig */,
+				10238C41B6E388044D1F4157 /* Pods-ConstraintsPractice.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01E812C329E82D3800CC6F59 /* Build configuration list for PBXNativeTarget "ConstraintsPractice" */;
 			buildPhases = (
+				6CCB6C88CA36992A7FF3A451 /* [CP] Check Pods Manifest.lock */,
 				01E812AB29E82D3600CC6F59 /* Sources */,
 				01E812AC29E82D3600CC6F59 /* Frameworks */,
 				01E812AD29E82D3600CC6F59 /* Resources */,
+				8FC43B19516DBF3D85DCED87 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -103,7 +130,7 @@
 				};
 			};
 			buildConfigurationList = 01E812AA29E82D3600CC6F59 /* Build configuration list for PBXProject "ConstraintsPractice" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6CCB6C88CA36992A7FF3A451 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ConstraintsPractice-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FC43B19516DBF3D85DCED87 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ConstraintsPractice/Pods-ConstraintsPractice-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ConstraintsPractice/Pods-ConstraintsPractice-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ConstraintsPractice/Pods-ConstraintsPractice-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		01E812AB29E82D3600CC6F59 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		01E812C429E82D3800CC6F59 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9CC970E35BF1CA30E7662D1 /* Pods-ConstraintsPractice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -309,6 +379,7 @@
 		};
 		01E812C529E82D3800CC6F59 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10238C41B6E388044D1F4157 /* Pods-ConstraintsPractice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
